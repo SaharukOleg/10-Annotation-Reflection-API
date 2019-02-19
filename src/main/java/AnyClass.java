@@ -7,16 +7,25 @@ public class AnyClass {
     @MyAnnotation
     private String field;
 
-    private int method1(int a){
+    void myMethod(String a, int... args) {
+    }
+
+    void myMethod(String... args) {
+
+    }
+
+
+    private int method1(int a) {
         return a;
     }
 
     @MyAnnotation
-    public void method2(){
+    public void method2() {
 
         System.out.println("method2");
     }
-    private String method3(){
+
+    private String method3() {
         return "method3";
 
     }
